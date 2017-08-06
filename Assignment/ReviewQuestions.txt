@@ -1,0 +1,32 @@
+//Q1
+  THe two kinds of sivision are integer division, which dicards any remainde, and floating-point division, which yields a floating-point result(with a fractional part, if necessary). Floating-point division is performed if both operands are integers.
+
+//Q2
+  False is 0. Any number(without 0)is true.
+The built-in operators <, <=, >, >=, ==, !=, &&, ||, and ! always generate 0 for false and 1 for true. 
+
+//3
+  Terminating declarations, terminating statements, and separating the three control expressions in a for loop.
+
+//4
+ int i =0;
+ while(i<10){
+             printf("i is %d\n",i);
+             i = i+1;
+            }
+
+//5
+1(true)
+
+//6
+If T is greater than or equal to 32 and less than 212.
+
+//7
+It would print "yes", since x is nonzero.
+
+//8
+a
+a
+a
+b
+c

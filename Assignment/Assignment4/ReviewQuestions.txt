@@ -1,0 +1,35 @@
+/*1.What would the expression
+c = getchar() != EOF
+
+DO */
+
+It would read a character and compare it to the constant End Of line(EOF).
+If the character read was equal to EOF, it would set c to 0, 
+otherwise (i.e. for any other character) it would set c to 1.
+
+/*2.Why must the variable used to hold getchar's return value be type int?
+
+Variables of type char are typically 8 bits large, 
+which means that they can hold 2<sup>8</sup>, or 256 different character values. 
+Furthermore, on an 8-bit system, getchar can theoretically return characters having any of these 256 character values. 
+However, getchar can also return a 257th value, EOF, 
+which is not a character value but rather an indication that there are no more characters to get.
+
+/*3.What is the difference between the prefix and postfix forms of the ++ operator?
+The prefix form increments first, and the incremented value goes on to participate in the surrounding expression (if any). The postfix form increments later; the previous value goes on to participate in the surrounding expression.
+
+/*4.What would the expression
+/i = i++
+/do ? */
+
+ It tries to modify i twice, it's undefined.
+
+/*5.What is the definition of a string in C? 
+
+An array of characters, terminated with the null character \0.
+
+/*6.What will the getline function do if successive calls to getchar return the four values 'a', 'b', 'c', and EOF?
+
+The first three characters are placed in the line array, as usual, and when the EOF indicator is read, getline breaks out of its loop, also as usual. Although c is now EOF, nch is 3, so the condition c == EOF && nch == 0 is false. getline therefore does not return EOF, but rather terminates the line with \0 and returns its length, just as it does with a normal line which it finds \n at the end of. 
+
+ 
